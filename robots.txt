@@ -1,0 +1,7 @@
+User-Agent: *
+
+Disallow:
+
+
+Sitemap: http://pinupaz.tabletennispin.click/sitemap.xml
+Host: pinupaz.tabletennispin.click

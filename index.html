@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Masa tenisi, boş zamanlarınızı eğlenceli ve aktif bir hobi ile değerlendirmenin en iyi yollarından biridir. Pin-up ile masa tenisi hakkında her şeyi öğrenin!">
+    <meta name="keywords" content="hobi, eğlence, boş zaman, aktif hobi, pin-up, masa tenisi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+    <title>Pin-up Masa Tenisi: Hobi ve Boş Zaman</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header, section {
+        margin: 0;
+        width: 100%;
+      }
+
+      footer {
+        margin: 0;
+        width: 100%;
+        background-color: #a6f4b1;
+        text-align: center;
+      }
+
+
+      header {
+        background-color: #a6f4b1;
+        text-align: center;
+      }
+
+      h1, h2, h3 {
+        color: #333;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .slider {
+        width: 100%;
+        max-width: 1440px;
+      }
+
+      .slider img {
+        width: 100%;
+        height: auto;
+      }
+
+      .text-image-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .text-image-row img {
+        max-width: 50%;
+        height: auto;
+      }
+
+      .text-image-row p {
+        max-width: 50%;
+      }
+
+      .block-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .block {
+        border: 2px solid #ccc;
+        padding: 15px;
+        flex: 1;
+        max-width: 30%;
+        box-sizing: border-box;
+      }
+
+      .block img {
+        width: 100%;
+        height: auto;
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .gallery img {
+        max-width: 30%;
+        height: auto;
+      }
+
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .text-image-row, .block-row {
+          flex-direction: column;
+        }
+
+        .gallery img {
+          width: 100%;
+        }
+
+        ul {
+          padding-left: 15px;
+        }
+        .text-image-row p {
+          max-width: 80%;
+        }
+        .text-image-row img {
+          max-width: 80%;
+          height: auto;
+        }
+        .block {
+          max-width: 100%;
+        }
+      }
+
+      .faq {
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 2em;
+        text-align: center;
+        color: #333;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        color: #007BFF;
+        margin: 15px;
+      }
+
+      p {
+        line-height: 1.6;
+        color: #555;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+      .gdee-card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 1440px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      .gdee-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .gdee-card-img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .faq.container h1, .faq.container p{
+        margin: 0 20px;
+      }
+      button {
+        margin-top: auto;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .gdee-card-container {
+          padding: 0px;
+        }
+
+        h2 {
+          font-size: 1.2em;
+        }
+
+        button {
+          padding: 8px;
+        }
+      }
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+      }
+
+      nav ul li {
+        width: 30%;
+        margin-bottom: 10px;
+      }
+
+      nav ul li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        border-radius: 5px;
+      }
+
+      header a {
+        text-decoration: none;
+      }
+      @media (min-width: 768px) {
+        nav ul {
+          flex-wrap: nowrap;
+        }
+
+        nav ul li {
+          width: auto;
+        }
+      }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+    <a href="index.html"><h1>Pin-up Masa Tenisi: Hobi, Eğlence ve Aktif Boş Zaman</h1></a>
+    <p>Masa tenisi, boş zamanlarınızı aktif ve eğlenceli bir şekilde değerlendirmenin en iyi yollarından biridir. Pin-up
+        ile bu heyecan dolu hobiye katılın!</p>
+    <nav>
+        <ul>
+            <li><a href="#hobi">Hobi</a></li>
+            <li><a href="#ipuclari">İpuçları</a></li>
+            <li><a href="#rehber">Rehber</a></li>
+            <li><a href="tel:+994557175797">+994557175797</a></li>
+            <li><a href="policy.html">Gizlilik Politikası</a></li>
+            <li><a href="terms.html">Şartlar ve koşullar</a></li>
+        </ul>
+    </nav>
+    <div class="slider">
+        <img src="img/0.jpg" alt="Masa Tenisi Slayt" width="1440" height="350">
+    </div>
+    </div>
+</header>
+
+<!-- Hobi Olarak Masa Tenisi -->
+<section id="hobi" class="container">
+    <h2>Hobi Olarak Masa Tenisi Nedir?</h2>
+    <div class="text-image-row">
+        <p>Masa tenisi, hızlı tempolu ve heyecan dolu bir spor olmasının yanı sıra, eğlenceli bir boş zaman
+            aktivitesidir. Pin-up ruhuyla masa tenisi, sadece bir spor değil, aynı zamanda fiziksel sağlığınızı
+            geliştiren ve zihinsel odaklanmayı sağlayan bir hobi olarak dikkat çeker. Bu spor, yaş ve deneyim fark
+            etmeksizin herkesin kolayca öğrenebileceği ve aktif bir şekilde katılabileceği bir etkinliktir.</p>
+        <img src="img/12.jpeg" alt="Masa Tenisi Oyunu">
+    </div>
+</section>
+
+<!-- Masa Tenisine Yeni Başlayanlar İçin İpuçları -->
+<section id="ipuclari" class="container">
+    <h2>Masa Tenisine Yeni Başlayanlar İçin Pin-up Tarzı İpuçları</h2>
+    <div class="block-row">
+        <div class="block">
+            <h3>Raket Seçimi</h3>
+            <img src="img/34.jpeg" alt="Raket Seçimi">
+            <p>Başlangıç seviyesindeki oyuncular için doğru raket seçimi büyük önem taşır. Pin-up tarzı bir başlangıç
+                için dengeli ve hafif bir raket tercih edin.</p>
+        </div>
+        <div class="block">
+            <h3>Topa Odaklanma</h3>
+            <img src="img/45.jpeg" alt="Topa Odaklanma">
+            <p>Masa tenisi hızlı bir spor olduğundan, topu dikkatlice izlemek ve rakibin vuruşlarına karşı hazır olmak
+                başarının anahtarıdır.</p>
+        </div>
+        <div class="block">
+            <h3>Doğru Ayak Pozisyonu</h3>
+            <img src="img/233.jpeg" alt="Doğru Ayak Pozisyonu">
+            <p>Hızlı hareket etmek için bacaklarınızı hafifçe açarak dengeli bir duruş alın ve ayaklarınız sürekli
+                hareket halinde olsun.</p>
+        </div>
+    </div>
+</section>
+
+<section class="faq container">
+    <h1>Hobi ve Boş Zaman Aktivitesi Olarak Masa Tenisi</h1>
+</section>
+
+<!-- Masa Tenisini Geliştirme Rehberi -->
+<section id="rehber" class="container">
+    <h2>Masa Tenisini Geliştirme Rehberi</h2>
+</section>
+
+
+<section class="gdee-card-container container">
+    <div class="gdee-card">
+        <img src="img/34.jpeg" alt="Raket Seçimi">
+        <h2>Raket Seçimi</h2>
+        <p>Başlangıç seviyesindeki oyuncular için doğru raket seçimi büyük önem taşır. Pin-up tarzı bir başlangıç için
+            dengeli ve hafif bir raket tercih edin.</p>
+        <button>daha fazlasını öğren</button>
+    </div>
+    <div class="gdee-card">
+        <img src="img/45.jpeg" alt="Topa Odaklanma">
+        <h2>Topa Odaklanma</h2>
+        <p>Masa tenisi hızlı bir spor olduğundan, topu dikkatlice izlemek ve rakibin vuruşlarına karşı hazır olmak
+            başarının anahtarıdır.</p>
+        <button>daha fazlasını öğren</button>
+    </div>
+    <div class="gdee-card">
+        <img src="img/233.jpeg" alt="Doğru Ayak Pozisyonu">
+        <h2>Doğru Ayak Pozisyonu</h2>
+        <p>Hızlı hareket etmek için bacaklarınızı hafifçe açarak dengeli bir duruş alın ve ayaklarınız sürekli hareket
+            halinde olsun.</p>
+        <button>daha fazlasını öğren</button>
+    </div>
+    <div class="gdee-card">
+        <img src="img/92340234.png" alt="Düzenli Pratik">
+        <h2>Düzenli Pratik</h2>
+        <p>Reflekslerinizi geliştirmek için düzenli antrenman yapın. Her gün en az 30 dakika ayırmak, gelişiminizi
+            hızlandıracaktır.</p>
+        <button>daha fazlasını öğren</button>
+    </div>
+    <div class="gdee-card">
+        <img src="img/ewrwer.png" alt="Çeşitli Rakiplerle Oynamak">
+        <h2>Çeşitli Rakiplerle Oynamak</h2>
+        <p>Farklı stillerle karşılaşmak, masa tenisindeki yeteneklerinizi artıracaktır.</p>
+        <button>daha fazlasını öğren</button>
+    </div>
+    <div class="gdee-card">
+        <img src="img/werr.png" alt="Hedefler Belirlemek">
+        <h2>Kendinize Hedefler Belirleyin</h2>
+        <p>Her antrenman için küçük hedefler koyarak ilerlemenizi takip edin.</p>
+        <button>daha fazlasını öğren</button>
+    </div>
+</section>
+
+<section class="faq container">
+    <h1>Hobi ve Boş Zaman Aktivitesi Olarak Masa Tenisi</h1>
+    <p>Küçük bir alan gerektirdiğinden, evde, spor salonlarında veya açık alanlarda kolayca uygulanabilir. Fiziksel
+        sağlığınızı geliştirirken, strateji ve taktik becerilerinizi de ilerletir, bu da onu ideal bir hobi ve aktif boş
+        zaman etkinliği haline getirir.</p>
+
+    <div class="faq-item">
+        <h2>Masa Tenisi Turnuvaları</h2>
+        <p>Masa tenisi, dünya çapında birçok uluslararası turnuva ve şampiyonaya sahiptir. Olimpiyat Oyunları’ndan yerel
+            kulüp müsabakalarına kadar farklı seviyelerde düzenlenen turnuvalar, oyuncuların becerilerini sergilemeleri
+            için önemli fırsatlar sunar. Yarışma ortamı, sporun hızını ve heyecanını deneyimlemek isteyenler için
+            idealdir.</p>
+    </div>
+</section>
+
+<footer>
+    <p>İletişim: info@pinupaz.tabletennispin.click | Telefon: +994557175797 | 119 Academician Hasan Aliyev St, Baku,
+        Azerbaijan</p>
+</footer>
+</body>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Masa tenisi - Pin Up",
+        "url": "",
+        "logo": "/favicon/favicon.ico"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WPHeader",
+        "headline": "Masa tenisi - Pin Up",
+        "description": "Masa tenisi, boş zamanlarınızı eğlenceli ve aktif bir hobi ile değerlendirmenin en iyi yollarından biridir. Pin-up ile masa tenisi hakkında her şeyi öğrenin!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Masa tenisi - Pin Up",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/favicon/favicon.ico"
+            }
+        }
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Masa tenisi - Pin Up",
+        "description": "Masa tenisi, boş zamanlarınızı eğlenceli ve aktif bir hobi ile değerlendirmenin en iyi yollarından biridir. Pin-up ile masa tenisi hakkında her şeyi öğrenin!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Masa tenisi - Pin Up"
+        },
+        "license": "A license document that applies to this content, typically indicated by URL"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Main Navigation",
+        "url": "",
+        "hasPart": [
+            {
+                "@type": "WebPage",
+                "name": "Home",
+                "url": ""
+            },
+            {
+                "@type": "WebPage",
+                "name": "Policy",
+                "url": "/policy.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "Terms of Conditions",
+                "url": "/terms.html"
+            }
+        ]
+    }
+</script>
+</html>
